@@ -1,0 +1,37 @@
+{
+  "name": "time-twist-pop",
+  "author": "Dook",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "time-twist-pop",
+    "uuid": "a4839d60-d827-4ec7-95ae-c497b13d1bce",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "png",
+          "name": "Background",
+          "file": "background.png",
+          "memoryFormat": "8Bit",
+          "storageFormat": "png"
+        }
+      ]
+    }
+  }
+}
