@@ -1,0 +1,67 @@
+[
+  {
+    "type": "heading",
+    "defaultValue": "App Configuration"
+  },
+  {
+    "type": "text",
+    "defaultValue": "Here is some introductory text."
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Colors"
+      },
+  {
+                "type": "radiogroup",
+                "messageKey": "ColorNumber",
+                "label": "ColorScheme",
+                "defaultValue": "1",
+                "options": [
+                    {
+                        "label": "Silver Shadow",
+                        "value": "1"
+                    },
+                    {
+                        "label": "Slate Shadow",
+                        "value": "2"
+                    },
+                    {
+                        "label": "Rose Quartz",
+                        "value": "3"
+                    },
+                    {
+                        "label": "Sailor Blue",
+                        "value": "4"
+                    },
+                    {
+                        "label": "Strawberry Twist",
+                        "value": "5"
+                    },
+                    {
+                        "label": "Mint Twist",
+                        "value": "6"
+                    },
+                    {
+                        "label": "Sorcerer Red",
+                        "value": "7"
+                    },
+                    {
+                        "label": "Dragon Blue",
+                        "value": "8"
+                    },
+                    {
+                        "label": "Purple Punch",
+                        "value": "9"
+                    }
+                ]
+            }
+    ]
+  },
+  {
+    "type": "submit",
+    "defaultValue": "Save Settings"
+  }
+]

@@ -2,36 +2,55 @@
   "name": "time-twist-pop",
   "author": "Dook",
   "version": "1.0.0",
-  "keywords": ["pebble-app"],
+  "keywords": [
+    "pebble-app"
+  ],
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "pebble-clay": "^1.0.4"
+  },
   "pebble": {
     "displayName": "time-twist-pop",
-    "uuid": "a4839d60-d827-4ec7-95ae-c497b13d1bce",
+    "uuid": "064d400e-66f0-4f9b-a5ba-7ca4b4779629",
     "sdkVersion": "3",
     "enableMultiJS": true,
     "targetPlatforms": [
-      "aplite",
       "basalt",
-      "chalk",
-      "diorite"
+      "chalk"
     ],
     "watchapp": {
       "watchface": true
     },
     "messageKeys": [
-      "dummy"
+      "ColorNumber"
     ],
     "resources": {
-      "media": [
-        {
-          "type": "png",
-          "name": "Background",
-          "file": "background.png",
+      "media": [{
+          "file": "images/background.png",
           "memoryFormat": "8Bit",
-          "storageFormat": "png"
+          "name": "ROUND",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },
+        {
+          "file": "images/backgroundrec.png",
+          "memoryFormat": "8Bit",
+          "name": "RECT",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
         }
-      ]
-    }
+]
+    },
+    "capabilities": [
+      "configurable" 
+]
   }
 }
