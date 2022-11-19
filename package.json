@@ -1,17 +1,22 @@
 {
   "name": "time-twist-pop",
   "author": "Dook",
-  "version": "1.0.0",
+  "version": "1.0",
   "keywords": [
-    "pebble-app"
+    "analog",
+    "style",
+    "customizable"
   ],
   "private": true,
   "dependencies": {
     "pebble-clay": "^1.0.4"
   },
   "pebble": {
-    "displayName": "time-twist-pop",
-    "uuid": "064d400e-66f0-4f9b-a5ba-7ca4b4779629",
+    "capabilities": [
+      "configurable"
+    ],
+    "displayName": "Time Twist Pop",
+    "uuid": "baad6bfb-3b64-4b50-96e1-3f9a420c10ba",
     "sdkVersion": "3",
     "enableMultiJS": true,
     "targetPlatforms": [
@@ -47,10 +52,7 @@
           ],
           "type": "bitmap"
         }
-]
-    },
-    "capabilities": [
-      "configurable" 
-]
+      ]
+    }
   }
 }
