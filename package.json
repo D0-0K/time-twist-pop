@@ -1,7 +1,7 @@
 {
   "name": "time-twist-pop",
   "author": "Dook",
-  "version": "1.0",
+  "version": "1.0.0",
   "keywords": [
     "analog",
     "style",
@@ -30,7 +30,14 @@
       "ColorNumber"
     ],
     "resources": {
-      "media": [{
+      "media": [
+        {
+          "menuIcon": "true",
+          "type": "png",
+          "name": "MENU_ICON",
+          "file": "time_twist_pop_ico.png"
+        },
+        {
           "file": "images/background.png",
           "memoryFormat": "8Bit",
           "name": "ROUND",
@@ -45,6 +52,115 @@
           "file": "images/backgroundrec.png",
           "memoryFormat": "8Bit",
           "name": "RECT",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },        {
+          "file": "images/backgroundgay.png",
+          "memoryFormat": "8Bit",
+          "name": "GAYROUND",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },
+        {
+          "file": "images/backgroundgayrec.png",
+          "memoryFormat": "8Bit",
+          "name": "GAYRECT",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },
+        {
+          "file": "images/backgroundpride.png",
+          "memoryFormat": "8Bit",
+          "name": "PRIDEROUND",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },
+        {
+          "file": "images/backgroundpriderec.png",
+          "memoryFormat": "8Bit",
+          "name": "PRIDERECT",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },
+                {
+          "file": "images/backgroundaro.png",
+          "memoryFormat": "8Bit",
+          "name": "AROROUND",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },
+        {
+          "file": "images/backgroundarorec.png",
+          "memoryFormat": "8Bit",
+          "name": "ARORECT",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },
+                {
+          "file": "images/backgroundgf.png",
+          "memoryFormat": "8Bit",
+          "name": "GFROUND",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },
+        {
+          "file": "images/backgroundgfrec.png",
+          "memoryFormat": "8Bit",
+          "name": "GFRECT",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },
+                {
+          "file": "images/backgroundles.png",
+          "memoryFormat": "8Bit",
+          "name": "LESROUND",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
+        },
+        {
+          "file": "images/backgroundlesrec.png",
+          "memoryFormat": "8Bit",
+          "name": "LESRECT",
           "storageFormat": "png",
           "targetPlatforms": [
             "basalt",

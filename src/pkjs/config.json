@@ -1,23 +1,22 @@
 [
   {
     "type": "heading",
-    "defaultValue": "App Configuration"
+    "defaultValue": "Time Twist Pop"
   },
   {
     "type": "text",
-    "defaultValue": "Here is some introductory text."
+    "defaultValue": "By Dook."
   },
   {
     "type": "section",
     "items": [
       {
         "type": "heading",
-        "defaultValue": "Colors"
+        "defaultValue": "Colorscheme"
       },
-  {
+         {
                 "type": "radiogroup",
                 "messageKey": "ColorNumber",
-                "label": "ColorScheme",
                 "defaultValue": "1",
                 "options": [
                     {
@@ -45,16 +44,76 @@
                         "value": "6"
                     },
                     {
+                        "label": "Stone Twist",
+                        "value": "8"
+                    },
+                    {
                         "label": "Sorcerer Red",
                         "value": "7"
                     },
                     {
                         "label": "Dragon Blue",
-                        "value": "8"
+                        "value": "10"
                     },
                     {
                         "label": "Purple Punch",
                         "value": "9"
+                    },
+                    {
+                        "label": "Gay Pride Twist",
+                        "value": "16"
+                    },
+                                        {
+                        "label": "Lesbian Pride Twist",
+                        "value": "15"
+                    },
+                    {
+                        "label": "Bisexual Pride Twist",
+                        "value": "18"
+                    },
+                    {
+                        "label": "Trans Pride Twist",
+                        "value": "17"
+                    },
+                    {
+                        "label": "Non-Binary Pride Twist",
+                        "value": "19"
+                    },
+                    {
+                        "label": "Asexual Pride Twist",
+                        "value": "20"
+                    },
+                    {
+                        "label": "Agender Pride Twist",
+                        "value": "21"
+                    },
+                    {
+                        "label": "Aromantic Pride Twist",
+                        "value": "13"
+                    },
+                    {
+                        "label": "Pansexual Pride Twist",
+                        "value": "22"
+                    },
+                    {
+                        "label": "Polysexual Pride Twist",
+                        "value": "23"
+                    },
+                    {
+                        "label": "Genderqueer Pride Twist",
+                        "value": "24"
+                    },
+                    {
+                        "label": "Genderfluid Pride Twist",
+                        "value": "14"
+                    },
+                    {
+                        "label": "Demiboy Pride Twist",
+                        "value": "25"
+                    },
+                    {
+                        "label": "Demigirl Pride Twist",
+                        "value": "26"
                     }
                 ]
             }

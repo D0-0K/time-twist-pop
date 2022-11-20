@@ -1,0 +1,169 @@
+{
+    "targetPlatforms": [
+        "basalt", 
+        "chalk"
+    ], 
+    "displayName": "Time Twist Pop", 
+    "name": "time-twist-pop", 
+    "messageKeys": {
+        "ColorNumber": 10000
+    }, 
+    "companyName": "Dook", 
+    "enableMultiJS": true, 
+    "versionLabel": "1.0", 
+    "capabilities": [
+        "configurable"
+    ], 
+    "sdkVersion": "3", 
+    "appKeys": {
+        "ColorNumber": 10000
+    }, 
+    "longName": "Time Twist Pop", 
+    "shortName": "Time Twist Pop", 
+    "watchapp": {
+        "watchface": true
+    }, 
+    "resources": {
+        "media": [
+            {
+                "menuIcon": "true", 
+                "type": "png", 
+                "name": "MENU_ICON", 
+                "file": "time_twist_pop_ico.png"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "ROUND", 
+                "storageFormat": "png", 
+                "file": "images/background.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "RECT", 
+                "storageFormat": "png", 
+                "file": "images/backgroundrec.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "GAYROUND", 
+                "storageFormat": "png", 
+                "file": "images/backgroundgay.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "GAYRECT", 
+                "storageFormat": "png", 
+                "file": "images/backgroundgayrec.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "PRIDEROUND", 
+                "storageFormat": "png", 
+                "file": "images/backgroundpride.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "PRIDERECT", 
+                "storageFormat": "png", 
+                "file": "images/backgroundpriderec.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "AROROUND", 
+                "storageFormat": "png", 
+                "file": "images/backgroundaro.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "ARORECT", 
+                "storageFormat": "png", 
+                "file": "images/backgroundarorec.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "GFROUND", 
+                "storageFormat": "png", 
+                "file": "images/backgroundgf.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "GFRECT", 
+                "storageFormat": "png", 
+                "file": "images/backgroundgfrec.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "LESROUND", 
+                "storageFormat": "png", 
+                "file": "images/backgroundles.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "LESRECT", 
+                "storageFormat": "png", 
+                "file": "images/backgroundlesrec.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
+            }
+        ]
+    }, 
+    "uuid": "baad6bfb-3b64-4b50-96e1-3f9a420c10ba"
+}
