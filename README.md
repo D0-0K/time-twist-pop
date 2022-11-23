@@ -5,6 +5,9 @@ Time Twist Pop is an simple, vibrant watchface design that aims to inject fun an
 
 ## Features
 ∙ 10 unique colorschemes. 
+
 ∙ 14 Pride Flag colorschemes. 
+
 ∙ Vibrate on Bluetooth disconnect. 
+
 ∙ Date display. 
