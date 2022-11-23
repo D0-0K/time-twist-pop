@@ -27,7 +27,10 @@
       "watchface": true
     },
     "messageKeys": [
-      "ColorNumber"
+      "ColorNumber",
+      "enableVibrateBluetooth",
+      "VibrationType",
+      "toggleDate"
     ],
     "resources": {
       "media": [
@@ -36,6 +39,17 @@
           "type": "png",
           "name": "MENU_ICON",
           "file": "time_twist_pop_ico.png"
+        },
+        {
+          "file": "images/date.png",
+          "memoryFormat": "8Bit",
+          "name": "DATE",
+          "storageFormat": "png",
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "bitmap"
         },
         {
           "file": "images/background.png",

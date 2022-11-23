@@ -7,3 +7,6 @@
 //
 
 extern uint32_t MESSAGE_KEY_ColorNumber;
+extern uint32_t MESSAGE_KEY_VibrationType;
+extern uint32_t MESSAGE_KEY_enableVibrateBluetooth;
+extern uint32_t MESSAGE_KEY_toggleDate;

@@ -12,13 +12,14 @@
 #define ROUND PBL_IF_ROUND_ELSE(true, false)
 
 static Window *s_window;
-static Layer *s_background_layer;
-static Layer *s_hands_layer;
+static Layer *s_background_layer, *s_date_layer, *s_hands_layer;
 
 static GBitmap *s_image;
+static GBitmap *s_date;
 
 uint8_t *bitmap_data;
 int bytes_per_row;
+static char date_char[] = "DD";
 
 static ClaySettings settings;
 
@@ -28,11 +29,14 @@ int BackgroundG2 = 0xAA5500;
 int BackgroundG3 = 0xAA5555;
 int HourHandCol = 0xFF5500;
 int MinHandCol = 0x555555;
-int IMAGE_HEIGHT = 180;
+int IMAGE_HEIGHT = 181;
 int IMAGE_WIDTH = 180;
 
 static void prv_default_settings() {
     settings.col_number = 1;
+    settings.enable_vibrate_bluetooth = true;
+    settings.vibe_type = 0;
+    settings.toggle_date = true;
 }
 
 // Handle the response from AppMessage
@@ -40,6 +44,18 @@ static void prv_inbox_received_handler(DictionaryIterator *iter, void *context) 
   Tuple *color_t = dict_find(iter, MESSAGE_KEY_ColorNumber);
     if (color_t) {
        settings.col_number = atoi(color_t->value->cstring);
+  }
+  Tuple *enable_vibrate_bluetooth_t = dict_find(iter, MESSAGE_KEY_enableVibrateBluetooth);
+  if (enable_vibrate_bluetooth_t) {
+    settings.enable_vibrate_bluetooth = enable_vibrate_bluetooth_t->value->int32 == 1;
+  }
+  Tuple *vibe_t = dict_find(iter, MESSAGE_KEY_VibrationType);
+    if (vibe_t) {
+       settings.vibe_type = atoi(vibe_t->value->cstring);
+  }
+  Tuple *toggle_date_t = dict_find(iter, MESSAGE_KEY_toggleDate);
+  if (toggle_date_t) {
+    settings.toggle_date = toggle_date_t->value->int32 == 1;
   }
   prv_save_settings();
 }
@@ -106,8 +122,9 @@ static void image_create(char round, char rect) {
   } 
 }
 
-static void load_image() {
+static void load_images() {
   gbitmap_destroy(s_image);
+  gbitmap_destroy(s_date);
   if (settings.col_number < 13) {
     image_create(RESOURCE_ID_ROUND,RESOURCE_ID_RECT);
   } else if (settings.col_number == 13) {
@@ -121,10 +138,13 @@ static void load_image() {
   } else if (settings.col_number > 16) {
     image_create(RESOURCE_ID_PRIDEROUND,RESOURCE_ID_PRIDERECT);
   }
+  s_date = gbitmap_create_with_resource(RESOURCE_ID_DATE);
 }
 
 static void col_replace() {
-  if (settings.col_number < 16) {
+  bitmap_data = gbitmap_get_data(s_image);
+  bytes_per_row = gbitmap_get_bytes_per_row(s_image);
+  if (settings.col_number <= 16) {
     replace_colors(IMAGE_WIDTH, IMAGE_HEIGHT, GColorArmyGreen, GColorFromHEX(Background1));
     replace_colors(IMAGE_WIDTH, IMAGE_HEIGHT, GColorWindsorTan, GColorFromHEX(Background2));
   } else if (settings.col_number > 16) {
@@ -136,35 +156,35 @@ static void col_replace() {
 
 static void update_colors() {
   layer_mark_dirty(s_background_layer);
-  load_image();
+  load_images();
   if (settings.col_number == 1) {
     color_set(0xFFFFFF,0xAAAAAA,0xFF5500,0x555555,0,0);
   } else if (settings.col_number == 2) {
-    color_set(0x000000,0x555555,0xFFAA00,0xFFFFFF,0,0);
+    color_set(0x555555,0X000000,0xFFAA00,0xFFFFFF,0,0);
   } else if (settings.col_number == 3) {
     color_set(0xFFFFFF,0xFFAAAA,0xFF0055,0x005555,0,0);
   } else if (settings.col_number == 4) {
     color_set(0xFFFFFF,0xAAAAFF,0x000055,0xFF0055,0,0);
   } else if (settings.col_number == 5) {
-    color_set(0xFF5555,0xFFAAAA,0x55FF00,0x550000,0,0);
+    color_set(0xFFAAAA,0xFF5555,0x55FF00,0x550000,0,0);
   } else if (settings.col_number == 6) {
     color_set(0xFFFFFF,0xAAFFAA,0xFF0055,0x005555,0,0);
   } else if (settings.col_number == 7) {
-    color_set(0xAA0000,0xFF5555,0xFFFFAA,0x000000,0,0);
+    color_set(0xFF5555,0xAA0000,0xFFFFAA,0x000000,0,0);
   } else if (settings.col_number == 8) {
     color_set(0x5555AA,0xAAAAFF,0xFFFF55,0xFF5500,0,0);
   } else if (settings.col_number == 9) {
-    color_set(0xAA55FF,0xAAAAFF,0x00FFAA,0x005500,0,0);
+    color_set(0xAAAAFF,0xAA55FF,0x00FFAA,0x005500,0,0);
   } else if (settings.col_number == 10) {
-    color_set(0x0000AA,0x5555FF,0xFFFFFF,0x000055,0,0);
+    color_set(0x5555FF,0x0000AA,0xFFFFFF,0x000055,0,0);
   } else if (settings.col_number == 13) {
-    color_set(0xFFFFFF,0,0x000000,0xFF5500,0,0);
+    color_set(0xFFFFFF,0xAAAAAA,0x000000,0xFF5500,0,0);
   } else if (settings.col_number == 14) {
-    color_set(0xFFFFFF,0,0x000000,0xFFAA55,0,0);
+    color_set(0xFFFFFF,0xFF5555,0x000000,0xFFAA55,0,0);
   } else if (settings.col_number == 15) {
-    color_set(0xFFFFFF,0,0x00AA55,0x000000,0,0);
+    color_set(0xFFFFFF,0xFF00AA,0x00AA55,0x000000,0,0);
   } else if (settings.col_number == 16) {
-    color_set(0xFF0000,0,0xFFFFFF,0x000000,0,0);
+    color_set(0xFF0000,0xFF5500,0xFFFFFF,0x000000,0,0);
   } else if (settings.col_number == 17) {
     color_set(0xFFFFFF,0x55AAFF,0xFF5555,0x000055,0xFFFFFF,0xFFAAAA);
   } else if (settings.col_number == 18) {
@@ -200,12 +220,26 @@ static void initialize_time() {
   tick_timer_service_subscribe(MINUTE_UNIT, prv_tick_handler);
 }
 
+static void bluetooth_callback(bool connected) {
+  if (!connected && settings.enable_vibrate_bluetooth) {
+   // vibrate watch
+    if (settings.vibe_type == 0) {
+      vibes_short_pulse();
+    } else if (settings.vibe_type == 1) {
+      vibes_double_pulse();
+    }
+  }
+}
+
 static void prv_update_display() {
   update_colors();
   layer_mark_dirty(s_background_layer);
+  layer_mark_dirty(s_date_layer);
   layer_mark_dirty(s_hands_layer);
   initialize_time();
+  layer_set_hidden(s_date_layer, !settings.toggle_date);
 }
+
 // Save the settings to persistent storage
 static void prv_save_settings() {
   persist_write_data(SETTINGS_KEY, &settings, sizeof(settings));
@@ -221,6 +255,21 @@ static void background_update_proc(Layer *layer, GContext *ctx) {
   graphics_draw_bitmap_in_rect(ctx, s_image, bitmap_bounds);
 }
 
+void date_update_proc(Layer *layer, GContext *ctx) {
+  GRect bounds = layer_get_bounds(layer);
+ // Set the compositing mode (GCompOpSet is required for transparency)
+  graphics_context_set_compositing_mode(ctx, GCompOpSet);
+ // Draw the image
+  graphics_draw_bitmap_in_rect(ctx, s_date, GRect(bounds.size.w  / PBL_IF_ROUND_ELSE(1.38, 1.33), bounds.size.h / 2 - 10, 24, 21));
+  if (settings.col_number == 2 || settings.col_number == 10 || settings.col_number == 16 || settings.col_number == 18 || settings.col_number == 20 || settings.col_number == 22 || settings.col_number == 23 || settings.col_number == 24) {
+    graphics_context_set_text_color(ctx, GColorWhite);
+  } else {
+    graphics_context_set_text_color(ctx, GColorBlack);
+  }
+
+  graphics_draw_text(ctx, date_char, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD), GRect(bounds.size.w  / PBL_IF_ROUND_ELSE(1.54, 1.52), bounds.size.h / 2 - 12, 50, 20), GTextOverflowModeTrailingEllipsis,GTextAlignmentCenter, 0);
+}
+
 static void hands_layer_update_proc(Layer *layer, GContext *ctx) {
   GRect bounds = layer_get_bounds(layer);
   GPoint s_center = grect_center_point(&bounds);
@@ -230,6 +279,7 @@ static void hands_layer_update_proc(Layer *layer, GContext *ctx) {
   
   time_t now = time(NULL);
   struct tm *t = localtime(&now);
+  strftime(date_char, sizeof(date_char), "%d", t);
  // calculate minute hand
   int32_t minute_angle = TRIG_MAX_ANGLE * t->tm_min / 60;
  // draw minute hand
@@ -252,25 +302,34 @@ static void prv_window_load(Window *window) {
   s_background_layer = layer_create(bounds);
   layer_set_update_proc(s_background_layer, background_update_proc);
   layer_add_child(window_layer, s_background_layer);
-  
+
+  s_date_layer = layer_create(bounds);
+  layer_set_update_proc(s_date_layer, date_update_proc);
+  layer_add_child(window_layer, s_date_layer);
+
   s_hands_layer = layer_create(bounds);
   layer_set_update_proc(s_hands_layer, hands_layer_update_proc);
   layer_add_child(window_layer, s_hands_layer);
-  
+
   initialize_time();
-  
-  load_image();
-  
-  bitmap_data = gbitmap_get_data(s_image);
-  bytes_per_row = gbitmap_get_bytes_per_row(s_image);
-  
+
+ // Register for Bluetooth connection updates
+  connection_service_subscribe((ConnectionHandlers) {
+    .pebble_app_connection_handler = bluetooth_callback
+  });
+ // Show the correct state of the BT connection from the start
+  bluetooth_callback(connection_service_peek_pebble_app_connection());
+
   update_colors();
+
 }
 
 static void prv_window_unload(Window *window) {
   layer_destroy(s_hands_layer);
+  layer_destroy(s_date_layer);
   layer_destroy(s_background_layer);
   gbitmap_destroy(s_image);
+  gbitmap_destroy(s_date);
 }
 
 static void prv_init(void) {
@@ -289,6 +348,8 @@ static void prv_init(void) {
 }
 
 static void prv_deinit(void) {
+  tick_timer_service_unsubscribe();
+  bluetooth_connection_service_unsubscribe();
   window_destroy(s_window);
 }
 

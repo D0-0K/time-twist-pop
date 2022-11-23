@@ -1,13 +1,13 @@
-# project  configured on Sun Nov 20 20:11:07 2022 by
+# project  configured on Wed Nov 23 18:16:18 2022 by
 # waf 1.7.11 (abi 98, python 20711f0 on linux2)
 # using /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/waf configure
 #
 ----------------------------------------
 Setting top to
-/home/pebble/pebble-projects/time-twist-pop
+/home/pebble/pebble-projects/time-twist-pop/time-twist-pop
 ----------------------------------------
 Setting out to
-/home/pebble/pebble-projects/time-twist-pop/build
+/home/pebble/pebble-projects/time-twist-pop/time-twist-pop/build
 ----------------------------------------
 Checking for program webpack
 /home/pebble/.pebble-sdk/SDKs/current/node_modules/.bin/webpack

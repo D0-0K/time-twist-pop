@@ -6,7 +6,7 @@ const isSandbox = false;
 
 // Array with absolute file path strings
 const entryFilenames = ["_pkjs_shared_additions.js",
-"/home/pebble/pebble-projects/time-twist-pop/src/pkjs/index.js"];
+"/home/pebble/pebble-projects/time-twist-pop/time-twist-pop/src/pkjs/index.js"];
 
 // folder path string
 const outputPath = "build";
@@ -18,10 +18,10 @@ const outputFilename = "pebble-js-app.js";
 const resolveRoots = ["/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/common/include",
 "/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/common/tools/webpack",
 "/home/pebble/.pebble-sdk/SDKs/current/node_modules",
-"/home/pebble/pebble-projects/time-twist-pop/build/js"];
+"/home/pebble/pebble-projects/time-twist-pop/time-twist-pop/build/js"];
 
 // Object, { alias1: 'path1', ... }
-const resolveAliases = {"app_package.json": "/home/pebble/pebble-projects/time-twist-pop/package.json",
+const resolveAliases = {"app_package.json": "/home/pebble/pebble-projects/time-twist-pop/time-twist-pop/package.json",
 "pebble-clay": "pebble-clay/dist/js"};
 
 // null or Object with key 'sourceMapFilename'

@@ -119,6 +119,43 @@
             }
     ]
   },
+    {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Utilities"
+      },
+  {
+    "type": "toggle",
+    "messageKey": "enableVibrateBluetooth",
+    "label": "Vibrate on Disconnect",
+    "defaultValue": true
+  },
+  {
+    "type": "select",
+    "messageKey": "VibrationType",
+    "label": "Vibration Pulse",
+    "defaultValue": "0",
+    "options": [
+      { 
+        "label": "Single Pulse", 
+        "value": "0" 
+      },
+      { 
+        "label": "Double Pulse", 
+        "value": "1" 
+      }
+   ]
+  },
+  {
+    "type": "toggle",
+    "messageKey": "toggleDate",
+    "label": "Show the Date",
+    "defaultValue": true
+  }
+  ]
+  },
   {
     "type": "submit",
     "defaultValue": "Save Settings"

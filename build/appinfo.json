@@ -6,7 +6,10 @@
     "displayName": "Time Twist Pop", 
     "name": "time-twist-pop", 
     "messageKeys": {
-        "ColorNumber": 10000
+        "ColorNumber": 10000, 
+        "toggleDate": 10003, 
+        "VibrationType": 10002, 
+        "enableVibrateBluetooth": 10001
     }, 
     "companyName": "Dook", 
     "enableMultiJS": true, 
@@ -16,7 +19,10 @@
     ], 
     "sdkVersion": "3", 
     "appKeys": {
-        "ColorNumber": 10000
+        "ColorNumber": 10000, 
+        "toggleDate": 10003, 
+        "VibrationType": 10002, 
+        "enableVibrateBluetooth": 10001
     }, 
     "longName": "Time Twist Pop", 
     "shortName": "Time Twist Pop", 
@@ -30,6 +36,17 @@
                 "type": "png", 
                 "name": "MENU_ICON", 
                 "file": "time_twist_pop_ico.png"
+            }, 
+            {
+                "targetPlatforms": [
+                    "basalt", 
+                    "chalk"
+                ], 
+                "name": "DATE", 
+                "storageFormat": "png", 
+                "file": "images/date.png", 
+                "memoryFormat": "8Bit", 
+                "type": "bitmap"
             }, 
             {
                 "targetPlatforms": [

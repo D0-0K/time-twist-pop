@@ -45,6 +45,8 @@ Discarded input sections
                 0x0000000000000000        0x4 basalt/src/resource_ids.auto.c.17.o
  .data.RESOURCE_ID_LESRECT
                 0x0000000000000000        0x4 basalt/src/resource_ids.auto.c.17.o
+ .data.RESOURCE_ID_DATE
+                0x0000000000000000        0x4 basalt/src/resource_ids.auto.c.17.o
  .data.RESOURCE_ID_GFROUND
                 0x0000000000000000        0x4 basalt/src/resource_ids.auto.c.17.o
  .data.RESOURCE_ID_PRIDEROUND
@@ -170,8 +172,6 @@ Discarded input sections
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.bluetooth_connection_service_subscribe
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.bluetooth_connection_service_unsubscribe
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.click_number_of_clicks_counted
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.click_recognizer_get_button_id
@@ -227,8 +227,6 @@ Discarded input sections
  .text.dict_write_uint32
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.dict_write_uint8
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.fonts_get_system_font
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.fonts_load_custom_font
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
@@ -319,8 +317,6 @@ Discarded input sections
  .text.layer_set_clips
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.layer_set_frame
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.layer_set_hidden
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.light_enable
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
@@ -481,8 +477,6 @@ Discarded input sections
  .text.strcat   0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.strcmp   0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.strcpy   0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.strftime
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.strlen   0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.strncat  0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.strncmp  0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
@@ -511,21 +505,15 @@ Discarded input sections
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.text_layer_legacy2_set_text_color_2bit
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.tick_timer_service_unsubscribe
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.time__deprecated
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.time_ms_deprecated
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.vibes_cancel
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.vibes_double_pulse
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.vibes_enqueue_custom_pattern
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.vibes_long_pulse
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.vibes_short_pulse
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.window_get_click_config_provider
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
@@ -590,8 +578,6 @@ Discarded input sections
  .text.window_single_click_subscribe
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.window_single_repeating_click_subscribe
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.graphics_draw_text
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.dict_serialize_tuplets_to_buffer
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
@@ -705,8 +691,6 @@ Discarded input sections
  .text.__profiler_stop
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.bitmap_layer_set_background_color
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.graphics_context_set_text_color
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.rot_bitmap_layer_set_corner_clip_color
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
@@ -1073,11 +1057,7 @@ Discarded input sections
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.smartstrap_unsubscribe
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.connection_service_peek_pebble_app_connection
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.connection_service_peek_pebblekit_connection
-                0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .text.connection_service_subscribe
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text.connection_service_unsubscribe
                 0x0000000000000000        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
@@ -1232,7 +1212,7 @@ LOAD basalt/appinfo.auto.c.17.o
 LOAD basalt/src/resource_ids.auto.c.17.o
 LOAD src/message_keys.auto.c.17.o
 LOAD /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a
-LOAD /home/pebble/pebble-projects/time-twist-pop/node_modules/pebble-clay/dist/binaries/basalt/libpebble-clay.a
+LOAD /home/pebble/pebble-projects/time-twist-pop/time-twist-pop/node_modules/pebble-clay/dist/binaries/basalt/libpebble-clay.a
 START GROUP
 LOAD /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a
 LOAD /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libc.a
@@ -1253,7 +1233,7 @@ LOAD /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/
  .note.gnu.build-id
                 0x0000000000000084       0x24 linker stubs
 
-.text           0x00000000000000a8     0x1788
+.text           0x00000000000000a8     0x1aa2
  *(.text)
  .text          0x00000000000000a8       0x14 /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
  .text          0x00000000000000bc      0x370 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
@@ -1282,246 +1262,299 @@ LOAD /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/
                 0x0000000000000850                __aeabi_d2iz
  *(.text.*)
  .text.prv_window_unload
-                0x00000000000008a0       0x30 src/c/time-twist-pop.c.17.o
+                0x00000000000008a0       0x4c src/c/time-twist-pop.c.17.o
  .text.background_update_proc
-                0x00000000000008d0       0x2c src/c/time-twist-pop.c.17.o
+                0x00000000000008ec       0x2c src/c/time-twist-pop.c.17.o
+ .text.date_update_proc
+                0x0000000000000918      0x110 src/c/time-twist-pop.c.17.o
+                0x0000000000000918                date_update_proc
  .text.prv_tick_handler
-                0x00000000000008fc       0x14 src/c/time-twist-pop.c.17.o
+                0x0000000000000a28       0x14 src/c/time-twist-pop.c.17.o
  .text.image_create.isra.1
-                0x0000000000000910       0x14 src/c/time-twist-pop.c.17.o
- .text.load_image
-                0x0000000000000924       0x44 src/c/time-twist-pop.c.17.o
- .text.draw_hand.isra.2
-                0x0000000000000968       0x62 src/c/time-twist-pop.c.17.o
- *fill*         0x00000000000009ca        0x6 
+                0x0000000000000a3c       0x14 src/c/time-twist-pop.c.17.o
+ .text.bluetooth_callback
+                0x0000000000000a50       0x20 src/c/time-twist-pop.c.17.o
+ .text.draw_hand.isra.3
+                0x0000000000000a70       0x62 src/c/time-twist-pop.c.17.o
+ *fill*         0x0000000000000ad2        0x6 
  .text.hands_layer_update_proc
-                0x00000000000009d0      0x180 src/c/time-twist-pop.c.17.o
+                0x0000000000000ad8      0x198 src/c/time-twist-pop.c.17.o
  .text.get_pixel_color
-                0x0000000000000b50       0x28 src/c/time-twist-pop.c.17.o
-                0x0000000000000b50                get_pixel_color
+                0x0000000000000c70       0x28 src/c/time-twist-pop.c.17.o
+                0x0000000000000c70                get_pixel_color
  .text.set_pixel_color
-                0x0000000000000b78       0x28 src/c/time-twist-pop.c.17.o
-                0x0000000000000b78                set_pixel_color
+                0x0000000000000c98       0x28 src/c/time-twist-pop.c.17.o
+                0x0000000000000c98                set_pixel_color
  .text.replace_colors
-                0x0000000000000ba0       0x3e src/c/time-twist-pop.c.17.o
-                0x0000000000000ba0                replace_colors
- *fill*         0x0000000000000bde        0x2 
+                0x0000000000000cc0       0x3e src/c/time-twist-pop.c.17.o
+                0x0000000000000cc0                replace_colors
+ *fill*         0x0000000000000cfe        0x2 
  .text.update_colors
-                0x0000000000000be0      0x8f4 src/c/time-twist-pop.c.17.o
+                0x0000000000000d00      0x994 src/c/time-twist-pop.c.17.o
  .text.prv_window_load
-                0x00000000000014d4       0xa8 src/c/time-twist-pop.c.17.o
+                0x0000000000001694       0xbc src/c/time-twist-pop.c.17.o
  .text.prv_inbox_received_handler
-                0x000000000000157c       0x6c src/c/time-twist-pop.c.17.o
+                0x0000000000001750       0xf8 src/c/time-twist-pop.c.17.o
  .text.startup.main
-                0x00000000000015e8       0x80 src/c/time-twist-pop.c.17.o
-                0x00000000000015e8                main
+                0x0000000000001848       0x98 src/c/time-twist-pop.c.17.o
+                0x0000000000001848                main
  .text.app_event_loop
-                0x0000000000001668        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001668                app_event_loop
+                0x00000000000018e0        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000018e0                app_event_loop
  .text.app_message_open
-                0x0000000000001674        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001674                app_message_open
- .text.atoi     0x0000000000001680        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001680                atoi
+                0x00000000000018ec        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000018ec                app_message_open
+ .text.atoi     0x00000000000018f8        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000018f8                atoi
+ .text.bluetooth_connection_service_unsubscribe
+                0x0000000000001904        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001904                bluetooth_connection_service_unsubscribe
  .text.cos_lookup
-                0x000000000000168c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x000000000000168c                cos_lookup
+                0x0000000000001910        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001910                cos_lookup
  .text.dict_find
-                0x0000000000001698        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001698                dict_find
+                0x000000000000191c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x000000000000191c                dict_find
+ .text.fonts_get_system_font
+                0x0000000000001928        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001928                fonts_get_system_font
  .text.gbitmap_create_with_resource
-                0x00000000000016a4        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000016a4                gbitmap_create_with_resource
+                0x0000000000001934        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001934                gbitmap_create_with_resource
  .text.gbitmap_destroy
-                0x00000000000016b0        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000016b0                gbitmap_destroy
+                0x0000000000001940        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001940                gbitmap_destroy
  .text.graphics_context_set_compositing_mode
-                0x00000000000016bc        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000016bc                graphics_context_set_compositing_mode
+                0x000000000000194c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x000000000000194c                graphics_context_set_compositing_mode
  .text.graphics_draw_bitmap_in_rect
-                0x00000000000016c8        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000016c8                graphics_draw_bitmap_in_rect
+                0x0000000000001958        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001958                graphics_draw_bitmap_in_rect
  .text.graphics_draw_line
-                0x00000000000016d4        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000016d4                graphics_draw_line
+                0x0000000000001964        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001964                graphics_draw_line
  .text.graphics_fill_rect
-                0x00000000000016e0        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000016e0                graphics_fill_rect
+                0x0000000000001970        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001970                graphics_fill_rect
  .text.grect_center_point
-                0x00000000000016ec        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000016ec                grect_center_point
+                0x000000000000197c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x000000000000197c                grect_center_point
  .text.layer_add_child
-                0x00000000000016f8        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000016f8                layer_add_child
+                0x0000000000001988        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001988                layer_add_child
  .text.layer_create
-                0x0000000000001704        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001704                layer_create
+                0x0000000000001994        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001994                layer_create
  .text.layer_destroy
-                0x0000000000001710        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001710                layer_destroy
+                0x00000000000019a0        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000019a0                layer_destroy
  .text.layer_get_bounds
-                0x000000000000171c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x000000000000171c                layer_get_bounds
+                0x00000000000019ac        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000019ac                layer_get_bounds
  .text.layer_mark_dirty
-                0x0000000000001728        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001728                layer_mark_dirty
+                0x00000000000019b8        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000019b8                layer_mark_dirty
+ .text.layer_set_hidden
+                0x00000000000019c4        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000019c4                layer_set_hidden
  .text.layer_set_update_proc
-                0x0000000000001734        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001734                layer_set_update_proc
- .text.memset   0x0000000000001740        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001740                memset
+                0x00000000000019d0        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000019d0                layer_set_update_proc
+ .text.memset   0x00000000000019dc        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000019dc                memset
  .text.sin_lookup
-                0x000000000000174c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x000000000000174c                sin_lookup
+                0x00000000000019e8        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000019e8                sin_lookup
+ .text.strftime
+                0x00000000000019f4        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x00000000000019f4                strftime
  .text.tick_timer_service_subscribe
-                0x0000000000001758        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001758                tick_timer_service_subscribe
+                0x0000000000001a00        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a00                tick_timer_service_subscribe
+ .text.tick_timer_service_unsubscribe
+                0x0000000000001a0c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a0c                tick_timer_service_unsubscribe
+ .text.vibes_double_pulse
+                0x0000000000001a18        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a18                vibes_double_pulse
+ .text.vibes_short_pulse
+                0x0000000000001a24        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a24                vibes_short_pulse
  .text.window_create
-                0x0000000000001764        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001764                window_create
+                0x0000000000001a30        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a30                window_create
  .text.window_destroy
-                0x0000000000001770        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001770                window_destroy
+                0x0000000000001a3c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a3c                window_destroy
  .text.window_get_root_layer
-                0x000000000000177c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x000000000000177c                window_get_root_layer
+                0x0000000000001a48        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a48                window_get_root_layer
  .text.window_set_window_handlers
-                0x0000000000001788        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001788                window_set_window_handlers
+                0x0000000000001a54        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a54                window_set_window_handlers
  .text.window_stack_push
-                0x0000000000001794        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001794                window_stack_push
+                0x0000000000001a60        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a60                window_stack_push
  .text.app_message_register_inbox_received
-                0x00000000000017a0        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000017a0                app_message_register_inbox_received
+                0x0000000000001a6c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a6c                app_message_register_inbox_received
+ .text.graphics_draw_text
+                0x0000000000001a78        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a78                graphics_draw_text
  .text.persist_read_data
-                0x00000000000017ac        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000017ac                persist_read_data
+                0x0000000000001a84        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a84                persist_read_data
  .text.persist_write_data
-                0x00000000000017b8        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000017b8                persist_write_data
+                0x0000000000001a90        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a90                persist_write_data
  .text.graphics_context_set_fill_color
-                0x00000000000017c4        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000017c4                graphics_context_set_fill_color
+                0x0000000000001a9c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001a9c                graphics_context_set_fill_color
  .text.graphics_context_set_stroke_color
-                0x00000000000017d0        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000017d0                graphics_context_set_stroke_color
+                0x0000000000001aa8        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001aa8                graphics_context_set_stroke_color
+ .text.graphics_context_set_text_color
+                0x0000000000001ab4        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001ab4                graphics_context_set_text_color
  .text.localtime
-                0x00000000000017dc        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000017dc                localtime
+                0x0000000000001ac0        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001ac0                localtime
  .text.gbitmap_get_bounds
-                0x00000000000017e8        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000017e8                gbitmap_get_bounds
+                0x0000000000001acc        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001acc                gbitmap_get_bounds
  .text.gbitmap_get_bytes_per_row
-                0x00000000000017f4        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x00000000000017f4                gbitmap_get_bytes_per_row
+                0x0000000000001ad8        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001ad8                gbitmap_get_bytes_per_row
  .text.gbitmap_get_data
-                0x0000000000001800        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001800                gbitmap_get_data
+                0x0000000000001ae4        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001ae4                gbitmap_get_data
  .text.graphics_context_set_stroke_width
-                0x000000000000180c        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x000000000000180c                graphics_context_set_stroke_width
- .text.time     0x0000000000001818        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001818                time
+                0x0000000000001af0        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001af0                graphics_context_set_stroke_width
+ .text.time     0x0000000000001afc        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001afc                time
+ .text.connection_service_peek_pebble_app_connection
+                0x0000000000001b08        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001b08                connection_service_peek_pebble_app_connection
+ .text.connection_service_subscribe
+                0x0000000000001b14        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001b14                connection_service_subscribe
  .text.gcolor_equal
-                0x0000000000001824        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
-                0x0000000000001824                gcolor_equal
+                0x0000000000001b20        0xc /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+                0x0000000000001b20                gcolor_equal
  *(.rodata)
  *(.rodata*)
+ .rodata.str1.1
+                0x0000000000001b2c       0x1e src/c/time-twist-pop.c.17.o
 
-.glue_7         0x0000000000001830        0x0
+.glue_7         0x0000000000001b4c        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x0000000000001830        0x0
+.glue_7t        0x0000000000001b4c        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x0000000000001830        0x0
+.vfp11_veneer   0x0000000000001b4c        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x0000000000001830        0x0
+.v4_bx          0x0000000000001b4c        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x0000000000001830        0x0
+.iplt           0x0000000000001b4c        0x0
  .iplt          0x0000000000000000        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.rel.dyn        0x0000000000001830        0x0
+.rel.dyn        0x0000000000001b4c        0x0
  .rel.iplt      0x0000000000000000        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
  .rel.got       0x0000000000000000        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.data           0x0000000000001830       0x28
+.data           0x0000000000001b4c       0x38
  *(.data)
- .data          0x0000000000001830        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
- .data          0x0000000000001830        0x4 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
-                0x0000000000001830                __dso_handle
- .data          0x0000000000001834        0x0 src/c/time-twist-pop.c.17.o
- .data          0x0000000000001834        0x0 basalt/appinfo.auto.c.17.o
- .data          0x0000000000001834        0x0 basalt/src/resource_ids.auto.c.17.o
- .data          0x0000000000001834        0x0 src/message_keys.auto.c.17.o
- .data          0x0000000000001834        0x0 /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
- .data          0x0000000000001834        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
- .data          0x0000000000001834        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
- .data          0x0000000000001834        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
- .data          0x0000000000001834        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
- .data          0x0000000000001834        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .data          0x0000000000001b4c        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .data          0x0000000000001b4c        0x4 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x0000000000001b4c                __dso_handle
+ .data          0x0000000000001b50        0x0 src/c/time-twist-pop.c.17.o
+ .data          0x0000000000001b50        0x0 basalt/appinfo.auto.c.17.o
+ .data          0x0000000000001b50        0x0 basalt/src/resource_ids.auto.c.17.o
+ .data          0x0000000000001b50        0x0 src/message_keys.auto.c.17.o
+ .data          0x0000000000001b50        0x0 /home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/lib/libpebble.a(tmpFRPTsFpebble.o)
+ .data          0x0000000000001b50        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000000000001b50        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000000000001b50        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .data          0x0000000000001b50        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .data          0x0000000000001b50        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
  *(.data.*)
+ .data.date_char
+                0x0000000000001b50        0x3 src/c/time-twist-pop.c.17.o
+ *fill*         0x0000000000001b53        0x1 
  .data.Background1
-                0x0000000000001834        0x4 src/c/time-twist-pop.c.17.o
-                0x0000000000001834                Background1
+                0x0000000000001b54        0x4 src/c/time-twist-pop.c.17.o
+                0x0000000000001b54                Background1
  .data.Background2
-                0x0000000000001838        0x4 src/c/time-twist-pop.c.17.o
-                0x0000000000001838                Background2
+                0x0000000000001b58        0x4 src/c/time-twist-pop.c.17.o
+                0x0000000000001b58                Background2
  .data.MinHandCol
-                0x000000000000183c        0x4 src/c/time-twist-pop.c.17.o
-                0x000000000000183c                MinHandCol
+                0x0000000000001b5c        0x4 src/c/time-twist-pop.c.17.o
+                0x0000000000001b5c                MinHandCol
  .data.IMAGE_WIDTH
-                0x0000000000001840        0x4 src/c/time-twist-pop.c.17.o
-                0x0000000000001840                IMAGE_WIDTH
+                0x0000000000001b60        0x4 src/c/time-twist-pop.c.17.o
+                0x0000000000001b60                IMAGE_WIDTH
  .data.IMAGE_HEIGHT
-                0x0000000000001844        0x4 src/c/time-twist-pop.c.17.o
-                0x0000000000001844                IMAGE_HEIGHT
+                0x0000000000001b64        0x4 src/c/time-twist-pop.c.17.o
+                0x0000000000001b64                IMAGE_HEIGHT
  .data.HourHandCol
-                0x0000000000001848        0x4 src/c/time-twist-pop.c.17.o
-                0x0000000000001848                HourHandCol
+                0x0000000000001b68        0x4 src/c/time-twist-pop.c.17.o
+                0x0000000000001b68                HourHandCol
  .data.BackgroundG2
-                0x000000000000184c        0x4 src/c/time-twist-pop.c.17.o
-                0x000000000000184c                BackgroundG2
+                0x0000000000001b6c        0x4 src/c/time-twist-pop.c.17.o
+                0x0000000000001b6c                BackgroundG2
  .data.BackgroundG3
-                0x0000000000001850        0x4 src/c/time-twist-pop.c.17.o
-                0x0000000000001850                BackgroundG3
+                0x0000000000001b70        0x4 src/c/time-twist-pop.c.17.o
+                0x0000000000001b70                BackgroundG3
+ .data.MESSAGE_KEY_VibrationType
+                0x0000000000001b74        0x4 src/message_keys.auto.c.17.o
+                0x0000000000001b74                MESSAGE_KEY_VibrationType
+ .data.MESSAGE_KEY_toggleDate
+                0x0000000000001b78        0x4 src/message_keys.auto.c.17.o
+                0x0000000000001b78                MESSAGE_KEY_toggleDate
  .data.MESSAGE_KEY_ColorNumber
-                0x0000000000001854        0x4 src/message_keys.auto.c.17.o
-                0x0000000000001854                MESSAGE_KEY_ColorNumber
+                0x0000000000001b7c        0x4 src/message_keys.auto.c.17.o
+                0x0000000000001b7c                MESSAGE_KEY_ColorNumber
+ .data.MESSAGE_KEY_enableVibrateBluetooth
+                0x0000000000001b80        0x4 src/message_keys.auto.c.17.o
+                0x0000000000001b80                MESSAGE_KEY_enableVibrateBluetooth
 
-.igot.plt       0x0000000000001858        0x0
+.igot.plt       0x0000000000001b84        0x0
  .igot.plt      0x0000000000000000        0x0 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.got            0x0000000000001858        0xc
- .got           0x0000000000001858        0xc /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+.got            0x0000000000001b84       0x18
+ .got           0x0000000000001b84       0x18 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.got.plt        0x0000000000001864        0xc
- .got.plt       0x0000000000001864        0xc /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
-                0x0000000000001864                _GLOBAL_OFFSET_TABLE_
+.got.plt        0x0000000000001b9c        0xc
+ .got.plt       0x0000000000001b9c        0xc /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x0000000000001b9c                _GLOBAL_OFFSET_TABLE_
 
-.bss            0x0000000000001870       0x1c
+.bss            0x0000000000001ba8       0x30
  *(.bss)
  *(.bss.*)
+ .bss.s_date_layer
+                0x0000000000001ba8        0x4 src/c/time-twist-pop.c.17.o
  .bss.s_background_layer
-                0x0000000000001870        0x4 src/c/time-twist-pop.c.17.o
+                0x0000000000001bac        0x4 src/c/time-twist-pop.c.17.o
  .bss.s_hands_layer
-                0x0000000000001874        0x4 src/c/time-twist-pop.c.17.o
- .bss.s_image   0x0000000000001878        0x4 src/c/time-twist-pop.c.17.o
- .bss.settings  0x000000000000187c        0x4 src/c/time-twist-pop.c.17.o
- .bss.s_window  0x0000000000001880        0x4 src/c/time-twist-pop.c.17.o
- COMMON         0x0000000000001884        0x8 src/c/time-twist-pop.c.17.o
-                0x0000000000001884                bytes_per_row
-                0x0000000000001888                bitmap_data
+                0x0000000000001bb0        0x4 src/c/time-twist-pop.c.17.o
+ .bss.s_image   0x0000000000001bb4        0x4 src/c/time-twist-pop.c.17.o
+ .bss.settings  0x0000000000001bb8       0x10 src/c/time-twist-pop.c.17.o
+ .bss.s_window  0x0000000000001bc8        0x4 src/c/time-twist-pop.c.17.o
+ .bss.s_date    0x0000000000001bcc        0x4 src/c/time-twist-pop.c.17.o
+ COMMON         0x0000000000001bd0        0x8 src/c/time-twist-pop.c.17.o
+                0x0000000000001bd0                bytes_per_row
+                0x0000000000001bd4                bitmap_data
 
 DISCARD
  libc.a(*)
  libm.a(*)
  libgcc.a(*)
  *(.eh_frame)
-OUTPUT(/home/pebble/pebble-projects/time-twist-pop/build/basalt/pebble-app.elf elf32-littlearm)
+OUTPUT(/home/pebble/pebble-projects/time-twist-pop/time-twist-pop/build/basalt/pebble-app.elf elf32-littlearm)
 
 .ARM.attributes
                 0x0000000000000000       0x27
@@ -1559,64 +1592,64 @@ OUTPUT(/home/pebble/pebble-projects/time-twist-pop/build/basalt/pebble-app.elf e
  .comment       0x0000000000000000       0x4f src/message_keys.auto.c.17.o
  .comment       0x0000000000000000       0x4f /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
 
-.debug_info     0x0000000000000000     0x2487
- .debug_info    0x0000000000000000     0x1d3f src/c/time-twist-pop.c.17.o
- .debug_info    0x0000000000001d3f      0x349 basalt/appinfo.auto.c.17.o
- .debug_info    0x0000000000002088      0x159 basalt/src/resource_ids.auto.c.17.o
- .debug_info    0x00000000000021e1       0x81 src/message_keys.auto.c.17.o
- .debug_info    0x0000000000002262       0xb7 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
- .debug_info    0x0000000000002319       0xb7 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
- .debug_info    0x00000000000023d0       0xb7 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+.debug_info     0x0000000000000000     0x29af
+ .debug_info    0x0000000000000000     0x221f src/c/time-twist-pop.c.17.o
+ .debug_info    0x000000000000221f      0x349 basalt/appinfo.auto.c.17.o
+ .debug_info    0x0000000000002568      0x16b basalt/src/resource_ids.auto.c.17.o
+ .debug_info    0x00000000000026d3       0xb7 src/message_keys.auto.c.17.o
+ .debug_info    0x000000000000278a       0xb7 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x0000000000002841       0xb7 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x00000000000028f8       0xb7 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
 
-.debug_abbrev   0x0000000000000000      0x5fd
- .debug_abbrev  0x0000000000000000      0x49b src/c/time-twist-pop.c.17.o
- .debug_abbrev  0x000000000000049b       0x9e basalt/appinfo.auto.c.17.o
- .debug_abbrev  0x0000000000000539       0x44 basalt/src/resource_ids.auto.c.17.o
- .debug_abbrev  0x000000000000057d       0x44 src/message_keys.auto.c.17.o
- .debug_abbrev  0x00000000000005c1       0x14 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
- .debug_abbrev  0x00000000000005d5       0x14 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
- .debug_abbrev  0x00000000000005e9       0x14 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+.debug_abbrev   0x0000000000000000      0x645
+ .debug_abbrev  0x0000000000000000      0x4e3 src/c/time-twist-pop.c.17.o
+ .debug_abbrev  0x00000000000004e3       0x9e basalt/appinfo.auto.c.17.o
+ .debug_abbrev  0x0000000000000581       0x44 basalt/src/resource_ids.auto.c.17.o
+ .debug_abbrev  0x00000000000005c5       0x44 src/message_keys.auto.c.17.o
+ .debug_abbrev  0x0000000000000609       0x14 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x000000000000061d       0x14 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x0000000000000631       0x14 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
 
-.debug_loc      0x0000000000000000     0x1001
- .debug_loc     0x0000000000000000     0x1001 src/c/time-twist-pop.c.17.o
+.debug_loc      0x0000000000000000     0x117c
+ .debug_loc     0x0000000000000000     0x117c src/c/time-twist-pop.c.17.o
 
-.debug_aranges  0x0000000000000000      0x130
+.debug_aranges  0x0000000000000000      0x138
  .debug_aranges
-                0x0000000000000000       0x88 src/c/time-twist-pop.c.17.o
+                0x0000000000000000       0x90 src/c/time-twist-pop.c.17.o
  .debug_aranges
-                0x0000000000000088       0x18 basalt/appinfo.auto.c.17.o
+                0x0000000000000090       0x18 basalt/appinfo.auto.c.17.o
  .debug_aranges
-                0x00000000000000a0       0x18 basalt/src/resource_ids.auto.c.17.o
+                0x00000000000000a8       0x18 basalt/src/resource_ids.auto.c.17.o
  .debug_aranges
-                0x00000000000000b8       0x18 src/message_keys.auto.c.17.o
+                0x00000000000000c0       0x18 src/message_keys.auto.c.17.o
  .debug_aranges
-                0x00000000000000d0       0x20 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+                0x00000000000000d8       0x20 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
  .debug_aranges
-                0x00000000000000f0       0x20 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+                0x00000000000000f8       0x20 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
  .debug_aranges
-                0x0000000000000110       0x20 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+                0x0000000000000118       0x20 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
 
-.debug_ranges   0x0000000000000000      0x170
- .debug_ranges  0x0000000000000000      0x170 src/c/time-twist-pop.c.17.o
+.debug_ranges   0x0000000000000000      0x1a8
+ .debug_ranges  0x0000000000000000      0x1a8 src/c/time-twist-pop.c.17.o
 
-.debug_line     0x0000000000000000      0xcf1
- .debug_line    0x0000000000000000      0x589 src/c/time-twist-pop.c.17.o
- .debug_line    0x0000000000000589      0x121 basalt/appinfo.auto.c.17.o
- .debug_line    0x00000000000006aa       0xcc basalt/src/resource_ids.auto.c.17.o
- .debug_line    0x0000000000000776       0xc5 src/message_keys.auto.c.17.o
- .debug_line    0x000000000000083b      0x20a /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
- .debug_line    0x0000000000000a45      0x226 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
- .debug_line    0x0000000000000c6b       0x86 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+.debug_line     0x0000000000000000      0xd57
+ .debug_line    0x0000000000000000      0x5ef src/c/time-twist-pop.c.17.o
+ .debug_line    0x00000000000005ef      0x121 basalt/appinfo.auto.c.17.o
+ .debug_line    0x0000000000000710       0xcc basalt/src/resource_ids.auto.c.17.o
+ .debug_line    0x00000000000007dc       0xc5 src/message_keys.auto.c.17.o
+ .debug_line    0x00000000000008a1      0x20a /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x0000000000000aab      0x226 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x0000000000000cd1       0x86 /home/pebble/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
 
-.debug_str      0x0000000000000000      0xf4b
- .debug_str     0x0000000000000000      0xb13 src/c/time-twist-pop.c.17.o
-                                        0xbef (size before relaxing)
- .debug_str     0x0000000000000b13      0x2f9 basalt/appinfo.auto.c.17.o
-                                        0x3e3 (size before relaxing)
- .debug_str     0x0000000000000e0c      0x127 basalt/src/resource_ids.auto.c.17.o
-                                        0x1f2 (size before relaxing)
- .debug_str     0x0000000000000f33       0x18 src/message_keys.auto.c.17.o
-                                         0xfb (size before relaxing)
+.debug_str      0x0000000000000000     0x12b4
+ .debug_str     0x0000000000000000      0xe6b src/c/time-twist-pop.c.17.o
+                                        0xf47 (size before relaxing)
+ .debug_str     0x0000000000000e6b      0x2f9 basalt/appinfo.auto.c.17.o
+                                        0x3f2 (size before relaxing)
+ .debug_str     0x0000000000001164      0x138 basalt/src/resource_ids.auto.c.17.o
+                                        0x212 (size before relaxing)
+ .debug_str     0x000000000000129c       0x18 src/message_keys.auto.c.17.o
+                                        0x15e (size before relaxing)
 
-.debug_frame    0x0000000000000000      0x1a4
- .debug_frame   0x0000000000000000      0x1a4 src/c/time-twist-pop.c.17.o
+.debug_frame    0x0000000000000000      0x1c8
+ .debug_frame   0x0000000000000000      0x1c8 src/c/time-twist-pop.c.17.o

@@ -1,3 +1,6 @@
 {
-    "ColorNumber": 10000
+    "ColorNumber": 10000,
+    "VibrationType": 10002,
+    "enableVibrateBluetooth": 10001,
+    "toggleDate": 10003
 }
