@@ -13,7 +13,7 @@
     }, 
     "companyName": "Dook", 
     "enableMultiJS": true, 
-    "versionLabel": "1.0", 
+    "versionLabel": "2.0", 
     "capabilities": [
         "configurable"
     ], 
