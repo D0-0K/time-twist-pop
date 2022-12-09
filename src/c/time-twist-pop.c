@@ -145,12 +145,12 @@ static void col_replace() {
   bitmap_data = gbitmap_get_data(s_image);
   bytes_per_row = gbitmap_get_bytes_per_row(s_image);
   if (settings.col_number <= 16) {
-    replace_colors(IMAGE_WIDTH, IMAGE_HEIGHT, GColorArmyGreen, GColorFromHEX(Background1));
-    replace_colors(IMAGE_WIDTH, IMAGE_HEIGHT, GColorWindsorTan, GColorFromHEX(Background2));
+    replace_colors(IMAGE_WIDTH, PBL_IF_ROUND_ELSE(191,181), GColorArmyGreen, GColorFromHEX(Background1));
+    replace_colors(IMAGE_WIDTH, PBL_IF_ROUND_ELSE(191,181), GColorWindsorTan, GColorFromHEX(Background2));
   } else if (settings.col_number > 16) {
-    replace_colors(IMAGE_WIDTH, IMAGE_HEIGHT, GColorArmyGreen, GColorFromHEX(Background2));
-    replace_colors(IMAGE_WIDTH, IMAGE_HEIGHT, GColorWindsorTan, GColorFromHEX(BackgroundG2));
-    replace_colors(IMAGE_WIDTH, IMAGE_HEIGHT, GColorRoseVale, GColorFromHEX(BackgroundG3));
+    replace_colors(IMAGE_WIDTH, PBL_IF_ROUND_ELSE(192,181), GColorArmyGreen, GColorFromHEX(Background2));
+    replace_colors(IMAGE_WIDTH, PBL_IF_ROUND_ELSE(192,181), GColorWindsorTan, GColorFromHEX(BackgroundG2));
+    replace_colors(IMAGE_WIDTH, PBL_IF_ROUND_ELSE(192,181), GColorRoseVale, GColorFromHEX(BackgroundG3));
   }
 }
 
@@ -172,7 +172,7 @@ static void update_colors() {
   } else if (settings.col_number == 7) {
     color_set(0xFF5555,0xAA0000,0xFFFFAA,0x000000,0,0);
   } else if (settings.col_number == 8) {
-    color_set(0x5555AA,0xAAAAFF,0xFFFF55,0xFF5500,0,0);
+    color_set(0xFFFFFF,0xFFAA00,0x005555,0xFF5500,0,0);
   } else if (settings.col_number == 9) {
     color_set(0xAAAAFF,0xAA55FF,0x00FFAA,0x005500,0,0);
   } else if (settings.col_number == 10) {
